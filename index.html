@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Ervin Remus Radosavlevici">
+<meta name="copyright" content="© 2026 Ervin Remus Radosavlevici">
+<title>RADOS AGI | Production Kernel v5.0</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'bg-primary': '#02040a',
+          'panel-bg': 'rgba(15, 23, 42, 0.7)',
+          'border-primary': '#1e293b',
+          'accent-blue': '#3b82f6',
+          'accent-purple': '#8b5cf6',
+          'accent-gold': '#facc15',
+          'text-primary': '#f1f5f9',
+          'text-muted': '#64748b',
+          'status-success': '#10b981',
+          'error-red': '#f87171',
+          'error-bg': '#450a0a',
+        },
+        boxShadow: {
+          'success-glow': '0 0 8px #10b981',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  /* Glassmorphism Scrollbars */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 10px; }
+  /* Basic body styles */
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0"
+  }
+}
+</script>
+</head>
+<body class="bg-bg-primary text-text-primary min-h-screen flex flex-col bg-[radial-gradient(circle_at_50%_50%,_#111827_0%,_#02040a_100%)] overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
